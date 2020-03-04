@@ -45,15 +45,16 @@
                      "<ul>" +
                      "<li><strong>help</strong> - Display this help.</li>" +
                      "<li><strong>youtube [yt]</strong> - Visit Theblockbuster'1 YouTube channel</li>" +
-                     "<li><strong>autobump</strong> - View Disboard Auto Bump</li>" +
+                     "<li><strong>tempoinvite</strong> - Invite to our music bot, Tempo</li>" +
                      "<li><strong>curseforge</strong> - View Curseforge Direct Downloader</li>" +
                      "<li><strong>meow</strong> - uhhhh</li>" +
                      "</ul></div>";
         return output;
       };
-      commands.autobump = function(args) {
-        window.open('https://greasyfork.org/en/scripts/378511-auto-bump-disboard', '_blank');
-		return "Disboard Auto Bump opened in a new tab.";
+      commands.tempoinvite = function(args) {
+        window.open('https://discordapp.com/api/oauth2/authorize?client_id=682353731055910935&permissions=37091648&scope=bot', '_blank');
+        window.open('https://github.com/jagrosh/MusicBot/blob/master/LICENSE', '_blank');
+	   return "Bot invite opened in a new tab. Please read the license from the bot i used to make Tempo, Jagrosh's JMusic bot (also opened in a new tab).";
       };
       commands.curseforge = function(args) {
         window.open('https://greasyfork.org/en/scripts/394179-curseforge-direct-downloader', '_blank');
